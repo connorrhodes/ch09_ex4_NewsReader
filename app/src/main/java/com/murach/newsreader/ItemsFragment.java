@@ -19,7 +19,7 @@ import java.util.HashMap;
 /**
  * Created by adamvaldez on 2/18/15.
  */
-public class ItemsFragment extends Fragment
+public class ItemsFragment extends Fragment implements AdapterView.OnItemClickListener
 {
 
     private RSSFeed feed;
@@ -72,7 +72,7 @@ public class ItemsFragment extends Fragment
             Log.d("News reader", "Feed read");
 
             // update the display for the activity
-            ItemsActivity.this.updateDisplay();
+            ItemsFragment.this.updateDisplay();
         }
     }
 
@@ -106,20 +106,21 @@ public class ItemsFragment extends Fragment
 
         // create and set the adapter
         SimpleAdapter adapter =
-                new SimpleAdapter(this, data, resource, from, to);
+                new SimpleAdapter(getActivity(), data, resource, from, to);
         itemsListView.setAdapter(adapter);
 
         Log.d("News reader", "Feed displayed");
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+    public void onItemClick(AdapterView<?> parent, View v, int position, long id)
+    {
 
         // get the item at the specified position
         RSSItem item = feed.getItem(position);
 
         // create an intent
-        Intent intent = new Intent(this, ItemActivity.class);
+        Intent intent = new Intent(getActivity(), ItemActivity.class);
 
         intent.putExtra("pubdate", item.getPubDate());
         intent.putExtra("title", item.getTitle());

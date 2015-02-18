@@ -17,19 +17,20 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int descriptionTextView=0x7f080004;
-        public static final int itemsListView=0x7f080002;
-        public static final int linkTextView=0x7f080005;
+        public static final int descriptionTextView=0x7f080003;
+        public static final int itemsListView=0x7f080005;
+        public static final int linkTextView=0x7f080004;
         public static final int listFragment=0x7f080000;
         public static final int menu_settings=0x7f080006;
-        public static final int pubDateTextView=0x7f080003;
+        public static final int pubDateTextView=0x7f080002;
         public static final int titleTextView=0x7f080001;
     }
     public static final class layout {
         public static final int activity_item=0x7f030000;
         public static final int activity_items=0x7f030001;
         public static final int item_fragment=0x7f030002;
-        public static final int listview_item=0x7f030003;
+        public static final int items_fragment=0x7f030003;
+        public static final int listview_item=0x7f030004;
     }
     public static final class menu {
         public static final int activity_item_2=0x7f070000;
