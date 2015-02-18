@@ -39,7 +39,7 @@ public class ItemsFragment extends Fragment implements AdapterView.OnItemClickLi
         titleTextView = (TextView) view.findViewById(R.id.titleTextView);
         itemsListView = (ListView) view.findViewById(R.id.itemsListView);
 
-        itemsListView.setOnItemClickListener((AdapterView.OnItemClickListener) this);
+        itemsListView.setOnItemClickListener(this);
 
         new DownloadFeed().execute();
 

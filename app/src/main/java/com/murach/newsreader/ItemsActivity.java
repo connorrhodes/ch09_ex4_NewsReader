@@ -25,6 +25,5 @@ public class ItemsActivity extends Activity
         setContentView(R.layout.activity_items);
 
     }
-    
 
 }
