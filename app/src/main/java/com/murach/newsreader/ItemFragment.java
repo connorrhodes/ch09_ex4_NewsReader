@@ -9,10 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
 /**
  * Created by adamvaldez on 2/18/15.
  */
+
 public class ItemFragment extends Fragment  implements View.OnClickListener
 {
     @Override
