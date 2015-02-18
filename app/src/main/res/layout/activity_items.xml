@@ -4,18 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/titleTextView"
+    <fragment
+        android:id="@+id/listFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFAC83"
-        android:padding="7dp"
-        android:text="@string/items_title"
-        android:textSize="22sp" />
-    
-    <ListView
-        android:id="@+id/itemsListView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        class="com.murach.newsreader.ItemsFragment" ></fragment>
 
 </LinearLayout>
