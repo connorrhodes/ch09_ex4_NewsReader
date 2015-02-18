@@ -6,7 +6,7 @@ Project 4(ch09_ex4_NewsReader)
 
 Previous Project
 -------------------
-[Project 2-3](https://github.com/adamvaldez/ch09_ex4_NewsReader)  
+[Project 2-3](https://github.com/adamvaldez/TempConverter2)  
 
 Next Project
 -------------------
