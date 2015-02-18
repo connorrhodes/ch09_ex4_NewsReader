@@ -31,7 +31,7 @@ public class ItemsFragment extends Fragment implements AdapterView.OnItemClickLi
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View view = (inflater).inflate(R.layout.item_fragment, container, false);
+        View view = (inflater).inflate(R.layout.items_fragment, container, false);
 
 
         io = new FileIO(getActivity().getApplicationContext());
@@ -46,15 +46,18 @@ public class ItemsFragment extends Fragment implements AdapterView.OnItemClickLi
         return view;
     }
 
-    class DownloadFeed extends AsyncTask<Void, Void, Void> {
+    class DownloadFeed extends AsyncTask<Void, Void, Void>
+    {
         @Override
-        protected Void doInBackground(Void... params) {
+        protected Void doInBackground(Void... params)
+        {
             io.downloadFile();
             return null;
         }
 
         @Override
-        protected void onPostExecute(Void result) {
+        protected void onPostExecute(Void result)
+        {
             Log.d("News reader", "Feed downloaded");
             new ReadFeed().execute();
         }
@@ -62,13 +65,15 @@ public class ItemsFragment extends Fragment implements AdapterView.OnItemClickLi
 
     class ReadFeed extends AsyncTask<Void, Void, Void> {
         @Override
-        protected Void doInBackground(Void... params) {
+        protected Void doInBackground(Void... params)
+        {
             feed = io.readFile();
             return null;
         }
 
         @Override
-        protected void onPostExecute(Void result) {
+        protected void onPostExecute(Void result)
+        {
             Log.d("News reader", "Feed read");
 
             // update the display for the activity
