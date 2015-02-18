@@ -29,14 +29,14 @@ implements OnItemClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
         
-        io = new FileIO(getApplicationContext());
+        //io = new FileIO(getApplicationContext());
         
-        titleTextView = (TextView) findViewById(R.id.titleTextView);
-        itemsListView = (ListView) findViewById(R.id.itemsListView);
+        //titleTextView = (TextView) findViewById(R.id.titleTextView);
+        //itemsListView = (ListView) findViewById(R.id.itemsListView);
         
-        itemsListView.setOnItemClickListener(this);
+        //itemsListView.setOnItemClickListener(this);
         
-        new DownloadFeed().execute();
+        //new DownloadFeed().execute();
     }
     
     class DownloadFeed extends AsyncTask<Void, Void, Void> {
