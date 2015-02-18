@@ -9,7 +9,7 @@
         android:id="@+id/titleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFAC83"
+        android:background="#F44336"
         android:padding="7dp"
         android:text="@string/items_title"
         android:textSize="22sp" />
