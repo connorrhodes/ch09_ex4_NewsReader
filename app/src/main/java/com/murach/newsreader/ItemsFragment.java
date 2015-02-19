@@ -16,9 +16,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * Created by adamvaldez on 2/18/15.
- */
+
 public class ItemsFragment extends Fragment implements AdapterView.OnItemClickListener
 {
 

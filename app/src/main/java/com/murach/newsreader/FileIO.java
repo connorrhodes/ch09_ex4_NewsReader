@@ -15,7 +15,9 @@ import android.content.Context;
 import android.util.Log;
 
 public class FileIO {
-    
+
+    //instantiates the URL into a private string
+    //instantiates the file name the URL will inevitably link to
     private final String URL_STRING = "http://rss.cnn.com/rss/cnn_tech.rss";
     private final String FILENAME = "news_feed.xml";
     private Context context = null;

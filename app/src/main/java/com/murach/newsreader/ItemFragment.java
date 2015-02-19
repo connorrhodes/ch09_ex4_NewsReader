@@ -9,9 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * Created by adamvaldez on 2/18/15.
- */
 
 public class ItemFragment extends Fragment  implements View.OnClickListener
 {
@@ -20,7 +17,7 @@ public class ItemFragment extends Fragment  implements View.OnClickListener
     {
         View view1 = (inflater).inflate(R.layout.item_fragment, container, false);
 
-        // get references to widgets
+        // i.d the references to widgets to link code to the layout
         TextView titleTextView = (TextView) view1.findViewById(R.id.titleTextView);
         TextView pubDateTextView = (TextView) view1.findViewById(R.id.pubDateTextView);
         TextView descriptionTextView = (TextView) view1.findViewById(R.id.descriptionTextView);
